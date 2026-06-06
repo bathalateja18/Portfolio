@@ -1,0 +1,82 @@
+/* ! light mode  */
+#about
+{
+    width: 100%;
+    height: 90vh;
+    border: 2px solid black;
+}
+.aboutHead
+{
+width: 100%;
+height: 20vh;
+border: 2px solid dodgerblue;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.aboutHead h1{
+    color: cornflowerblue;
+}
+.aboutBody
+{
+width: 100%;
+height: 60vh;
+border: 2px solid teal;
+}
+.aboutpic
+{
+    width: 30%;
+    height: 100%;
+    border: 2px solid red;
+}
+/* ! dark mode  */
+#aboutDark
+{
+    width: 100%;
+    height: 90vh;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+.aboutDarkHead
+{
+width: 100%;
+height: 15vh;
+border: 2px solid gold;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.aboutDarkHead h1{
+    color: teal;
+}
+.aboutDarkBody
+{
+width: 100%;
+height: 50vh;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.aboutpicDark
+{
+    width: 30%;
+    height: 100%;
+    border: 2px solid green;
+
+}
+.aboutpicDark img{
+    width: 250px !important;
+    height: 250px !important;
+    border: 2px solid deepskyblue;
+    border-radius: 50%;
+
+}
+.aboutDataDark  
+{
+    width: 60%;
+    height: 100%;
+    border: 2px solid palevioletred;
+    color: red;
+    background-color: aqua;
+}

@@ -1,0 +1,152 @@
+ /*! this is for light mode  */
+#header{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(210,219,229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#name{
+    color: dodgerblue;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#name span{
+    color:  dodgerblue;
+    display: inline-flex;
+    /* color: blueviolet; */
+    height: 80px;
+    width: 15ch;
+    animation: typing 4s steps(20) infinite alternate-reverse;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+@keyframes typing {
+    from {width: 0ch}
+    
+}
+#role{
+    color: black;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+#role span{
+    color: dodgerblue;
+}
+#buttons button{
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#buttons button:active{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 3px 2px white, 0px 0px 3px 2px inset white;
+}
+
+ /*! this is for darkMode mode  */
+#headerDark{
+    width: 100%;
+    height: 70vh;
+/* border: 2px solid green; */
+    /* background-image: conic-gradient(from  360deg at 0% 100%, rgb(31,42,61) 0deg,rgb(14, 13, 13) 360deg); */
+    background-color:rgb(17,7,31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#nameDark{
+    color: teal;
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nameDark span{
+    color: gold;
+    display: inline-flex;
+    /* border: 2px solid gold; */
+    /* color: blueviolet; */
+    height: 60px;
+    width: 15ch;
+    animation: typing 4s steps(20) infinite alternate-reverse;
+    overflow: hidden;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+}
+@keyframes typing {
+    from {width: 0ch}
+    
+}
+#roleDark{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+#roleDark span{
+    color: gold;
+}
+#buttonsDark button{
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#buttonsDark button:active{
+    transform: scale(0.98);
+    box-shadow: 0px 0px 3px 2px white, 0px 0px 3px 2px inset white;
+}
+/* ! responsive */
+@media (max-width: 768px)
+{
+    #name{
+        font-size: 35px;
+        
+    }
+    #nameDark
+    {
+        font-size: 35px;
+        height: 40px;
+
+    }
+    #role,#roleDark{
+         margin: 10px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px)
+{
+    #name,#nameDark{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    #role,#roleDark{
+        font-size: 15px;
+    }
+}
