@@ -1,0 +1,10 @@
+:root
+{
+   
+    --bg-color: rgb(210,219,229);/*light background*/
+    --text-color: rgb(30,144,255);/*light text */
+}
+[data-theme="light"] {
+    --bg-color: #ffffff;
+    --text-color: rgb(17,7,31);
+}
