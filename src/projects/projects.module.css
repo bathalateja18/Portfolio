@@ -1,0 +1,29 @@
+.Projects
+{
+    width: 100vw;
+    height: 85vh;
+    border: 2px solid red;
+    display: grid;
+    grid-template-areas: 
+    "space-l title space-r"
+    "space-l project1 space-r"
+    "space-l project2 space-r";
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+}
+.title
+{
+    border: 2px solid blue;
+    grid-area:title ;
+}
+.project1
+{
+      border: 2px solid blue;
+    grid-area:project1 ;
+}
+.project2
+{
+      border: 2px solid blue;
+    grid-area:project2 ;
+}

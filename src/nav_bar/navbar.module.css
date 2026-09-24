@@ -45,15 +45,17 @@
     align-items: center;
     justify-content: space-around;
 }
-#links ul a{
+#links ul button{
     text-decoration: none;
     font-size: 18px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: gray;
+    color:black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    border: none;
+   background-color: transparent;
 }
-#links ul a:hover{
+#links ul button:hover{
     color: blueviolet;
    
 }

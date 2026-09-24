@@ -1,0 +1,73 @@
+.main {
+    width: 100%; /* Use 100% instead of 100vw to prevent horizontal scrollbars */
+    min-height: 100vh;
+    box-sizing: border-box;
+    border: 2px solid turquoise;
+    display: grid;
+
+    /* 5 columns defined in areas */
+    grid-template-areas: 
+        "space-l tech      tech     tech      space-r"
+        "space-l front_end back_end data_base space-r"
+        "space-l tools     test     message   space-r";
+
+    /* 5 matching column tracks: left margin, 3 equal content columns, right margin */
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+    grid-template-rows: 0.5fr 2fr 2fr;
+    gap: 20px;
+   
+}
+
+.technologies {
+    grid-area: tech;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontEnd {
+    grid-area: front_end;
+    border: 2px solid blue;
+}  
+
+.backEnd {
+    grid-area: back_end;
+    border: 2px solid blue;
+}
+
+.database {
+    grid-area: data_base;
+    border: 2px solid blue; 
+} 
+
+.tools {
+    grid-area: tools;
+    border: 2px solid blue;
+}
+
+
+
+ @media screen and (max-width:768px) {
+        .main
+        {
+            width: 100%; /* Use 100% instead of 100vw to prevent horizontal scrollbars */
+            min-height: 100vh;
+            box-sizing: border-box;
+            border: 2px solid turquoise;
+            display: grid;
+        
+            /* 5 columns defined in areas */
+            grid-template-areas: 
+                "space-l tech      space-r"
+                "space-l front_end space-r"
+                "space-l back_end  space-r"
+                "space-l data_base space-r"
+                "space-l tools     space-r";
+        
+            /* 5 matching column tracks: left margin, 3 equal content columns, right margin */
+            grid-template-columns: 0.5fr 1fr  0.5fr; 
+            grid-template-rows: 0.5fr 3fr 3fr 3fr 3fr;
+        }
+        
+    }

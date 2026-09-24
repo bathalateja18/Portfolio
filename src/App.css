@@ -1,10 +1,83 @@
-:root
+#main
 {
-   
-    --bg-color: rgb(210,219,229);/*light background*/
-    --text-color: rgb(30,144,255);/*light text */
+    width: 100vw;
+    max-height: 100%;
+    display:grid;
+    grid-template-areas: 
+             "nav"
+             "header"
+             "about"
+             "technologies"
+             "professional"
+             "projects"
+             "resume"
+             "contact"
+             "footer";
+
+             grid-template-columns: 1fr;
+
+border: 3px solid turquoise;
+    
 }
-[data-theme="light"] {
-    --bg-color: #ffffff;
-    --text-color: rgb(17,7,31);
+#NavBar
+{
+    grid-area: nav;
+}
+#Hearder
+{
+    grid-area:header ;
+}
+#About
+{
+    grid-area: about;
+}
+#Technologies
+{
+    grid-area: technologies;
+}
+#prefossionExperience
+{
+    grid-area: professional;
+}
+#Projects
+{
+    grid-area: projects;
+}
+#Resume
+{
+    grid-area: resume;
+}
+#Contact
+{
+    grid-area: contact;
+}
+#Footer
+{
+    grid-area: footer;
+}
+
+@media screen  and (max-width:768px){
+    #main
+{
+    width: 100vw;
+    max-height: 100%;
+    display:grid;
+    grid-template-areas: 
+             "nav"
+             "header"
+             "about"
+             "technologies"
+             "professional"
+             "projects"
+             "resume"
+             "contact"
+             "footer";
+
+             grid-template-columns: 1fr;
+
+border: 3px solid turquoise;
+    
+}
+
+    
 }

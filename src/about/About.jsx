@@ -19,7 +19,7 @@ const About = () => {
    
   return (
     <>
-    <section id= {darkMode ? style.aboutDark : style.about} >
+    <section id='About' class= {darkMode ? style.aboutDark : style.about} >
         <div className={ darkMode ? style.aboutHeadDark : style.aboutHead}>
             <h1>About Me</h1>
         </div>
@@ -28,7 +28,7 @@ const About = () => {
            <img src={myPic} alt="" />
           </div>
         <div  className= {darkMode ? style.aboutDataDark : style.aboutData}>
-          <p>I am a full-stack engineer who thrives on solving complex problems and optimizing code performance. 
+          <p>I am a software engineer who thrives on solving complex problems and optimizing code performance. 
             My core expertise is built around <b>Java, Spring Boot, Hibernate, SQL, and React.js</b>.
              To ensure my technical foundation is rock-solid, I have been undergoing intensive upskilling in <b>Data Structures, Algorithms (DSA)</b> , and <b>System Design</b>  through <b>Scaler</b>, where I even achieved a milestone of 100% problem-solving progress.
             My practical engineering approach comes from my experience as a <b>Software Engineer Intern</b> at <b>MyLapay</b>. During this internship, I focused heavily on backend efficiency and data protection—successfully optimizing database queries to accelerate application performance and implementing critical server-side data masking to secure sensitive information like user credentials. I love bridging the gap between deep algorithmic thinking and real-world application impact.</p>

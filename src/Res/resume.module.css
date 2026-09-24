@@ -1,0 +1,50 @@
+.Resume
+{
+    width: 100vw;
+    height: 30vh;
+    border: 2px solid magenta;
+    display: grid;
+
+    grid-template-areas: 
+    "space-l title title space-r"
+    "space-l view  download space-r";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    
+}
+.title
+{
+    border: 2px solid turquoise;
+    grid-area:title ;
+}
+.view
+{
+    border: 2px solid turquoise;
+    grid-area:view ;
+}
+.download
+{
+    border: 2px solid turquoise;
+    grid-area:download ;
+}
+
+@media screen and (max-width:768px) {
+    .Resume
+{
+    width: 100vw;
+    height: 30vh;
+    border: 2px solid magenta;
+    display: grid;
+
+    grid-template-areas: 
+    "space-l title space-r"
+    "space-l view  space-r"
+    "space-l download space-r"
+    ;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    row-gap: 1rem;
+}
+    
+}
+

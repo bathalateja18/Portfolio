@@ -1,5 +1,5 @@
 /* ! light mode  */
-#about {
+.about {
   width: 100%;
   height: 65vh;
   background-color: rgb(22,33,62);
@@ -84,7 +84,6 @@ b {
   flex: 0 1 10%;
   height: 80%;
 }
-
 .aboutFooter {
   width: 100%;
   height: 10vh;
@@ -112,7 +111,7 @@ b {
 
 
 /* dark mode styles */
-#aboutDark {
+.aboutDark {
   width: 100%;
   height: 60vh;
   overflow: hidden; /* keeps children inside */
@@ -223,7 +222,7 @@ b {
 
 /* responsive styles */
 @media (max-width: 968px) {
-    #about, #aboutDark {
+    .about, .aboutDark {
         height: auto;
         /* border: 2px solid rebeccapurple; */
     }
