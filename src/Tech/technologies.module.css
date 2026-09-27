@@ -31,7 +31,7 @@
     align-items: center;
     justify-content: center;
 }
-.technologies h1
+.technologies h1,h2
 {
     color:var(--text-heading);
 }
@@ -41,13 +41,13 @@
     /* border: 2px solid blue; */
     display: grid;
     grid-template-areas: 
-    "space title title "
+    "title title title "
     "space space1 space2 "
     "space html css "
     "space js react " 
     "space space-l space-r" 
     ;
-    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 2fr 2fr ;
    
     background-color: var( --bg-cardPrimary);
@@ -59,10 +59,10 @@
     align-self: center;
     display: flex;
     justify-content:center;
-    align-items: start;
+    align-items: center;
      /* border: 2px solid teal; */
 }
-.title h1{
+.title h2{
     color:var(--text-heading) ;
   font-family: sans-serif;
   font-weight: 600; 
@@ -91,7 +91,7 @@
     grid-area: back_end;
     display: grid;
     grid-template-areas: 
-    "space  title title "
+    "title  title title "
     "space java spring"
     "space space-r space-l "
     ;
@@ -117,7 +117,7 @@
     background-color:var( --bg-cardPrimary);
     display: grid;
     grid-template-areas: 
-     "space  title title "
+     "title  title title "
     "space space1 space2 "
     "space mysql space-l "
     "space space-r space-l ";
@@ -136,7 +136,7 @@
     background-color:var( --bg-cardPrimary);
     display: grid;
     grid-template-areas:  
-     "space  title title "
+     "title  title title "
      "space  space1 space2 "
     "space github git"
     "space space-r space-l ";

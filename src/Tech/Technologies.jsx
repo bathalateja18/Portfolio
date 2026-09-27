@@ -12,7 +12,7 @@ let Technologies = () => {
          <div class={style.technologies}><h1 >Technologies I’ve Worked With</h1></div>
          <div class={style.frontEnd}>
             <div class={style.title}>
-           <h1>    &nbsp;&nbsp;  &nbsp; Frontend   &nbsp;  &nbsp;  &nbsp;</h1>
+           <h2>    &nbsp;&nbsp;  &nbsp; Frontend   &nbsp;  &nbsp;  &nbsp;</h2>
             </div>
                 {/* html */}
             <div id={style.html} class={style.hexagon_container}>
@@ -46,7 +46,7 @@ let Technologies = () => {
          {/* backend  */}
          <div class={style.backEnd }>
              <div class={style.title}>
-           <h1>    &nbsp;&nbsp;  &nbsp;  Backend  &nbsp;  &nbsp;  &nbsp;</h1>
+           <h2>    &nbsp;&nbsp;  &nbsp;  Backend  &nbsp;  &nbsp;  &nbsp;</h2>
             </div>
                 {/* java */}
             <div id={style.java} class={style.hexagon_container}>
@@ -65,7 +65,7 @@ let Technologies = () => {
          <div class={style.database}>
 
              <div class={style.title}>
-           <h1>    &nbsp;&nbsp;  &nbsp;  Database  &nbsp;  &nbsp;  &nbsp;</h1>
+           <h2>    &nbsp;&nbsp;  &nbsp;  Database  &nbsp;  &nbsp;  &nbsp;</h2>
             </div>
                 {/* html */}
             <div id={style.mysql} class={style.hexagon_container}>
@@ -76,7 +76,7 @@ let Technologies = () => {
          </div>
          <div class={style.tools   }>
            <div class={style.title}>
-           <h1>    &nbsp;&nbsp;  &nbsp;  Tools  &nbsp;  &nbsp;  &nbsp;</h1>
+           <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Tools  &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; </h2>
             </div>
                 {/* git */}
             <div id={style.git} class={style.hexagon_container}>

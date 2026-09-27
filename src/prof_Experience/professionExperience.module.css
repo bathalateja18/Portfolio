@@ -1,31 +1,100 @@
 .main
 {
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     display: grid;
     grid-template-areas:
     "space-l title space-r"
     "space-l exp1  space-r"
     "space-l space  space-r";
    
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-rows: 0.5fr 2fr 0.2fr;
-    row-gap: 1rem;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-rows: 0.25fr 0.8fr 0.2fr;
+    /* row-gap: 1rem; */
     background-color: var(--bg-primary);
-
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    /* overflow: scroll; */
 }
 .title
 {
     grid-area: title;
     color:var(--text-heading);
-  
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 #colorCheck{
     /* color:deepskyblue */
     color:aqua
+
+}
+.duration
+{
+    color:var( --text-primary); ;
 }
 .experience1
 {
     grid-area: exp1;
     background-color: var(--bg-cardPrimary);
+    display: grid;
+    grid-template-areas: 
+    "space-l space space-r" 
+    "space-l role space-r"
+    "space-l companyName1 space-r"
+    "space-l roleDescription space-r"
+    "space-l space1 space-r"
+    ;
+    grid-template-columns: 0.5fr 3.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr 1fr 0.1fr;
+    box-sizing: border-box;
+}
+.role{
+    grid-area: role;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.companyName1
+{
+    grid-area: companyName1;
+}
+.companyName1 p b{
+    color: var(--highlight-color);
+}
+.roleDescription
+{
+    grid-area: roleDescription;
+    color: var( --text-primary);
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+li::marker
+{
+    color: var(--headerNameSpan);
+}
+
+ @media screen and (max-width:1250px)  {
+.main
+{
+    width: 100%;
+    height:90%;
+    display: grid;
+    grid-template-areas:
+    "space-l title space-r"
+    "space-l exp1  space-r"
+    "space-l space  space-r";
+    
+   
+    grid-template-columns: 1fr 1.7fr 1fr;
+    grid-template-rows: 0.5fr 0.8fr 0.2fr;
+    /* row-gap: 1rem; */
+    background-color: var(--bg-primary);
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    /* overflow: scroll; */
+}
 }
