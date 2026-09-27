@@ -2,23 +2,30 @@
 {
     width: 100vw;
     height: 70vh;
-    border: 2px solid red;
     display: grid;
     grid-template-areas:
     "space-l title space-r"
-    "space-l exp1  space-r";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 2fr;
+    "space-l exp1  space-r"
+    "space-l space  space-r";
+   
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.2fr;
     row-gap: 1rem;
+    background-color: var(--bg-primary);
 
 }
 .title
 {
-    border: 2px solid blue;
     grid-area: title;
+    color:var(--text-heading);
+  
+}
+#colorCheck{
+    /* color:deepskyblue */
+    color:aqua
 }
 .experience1
 {
-    border: 2px solid blue;
     grid-area: exp1;
+    background-color: var(--bg-cardPrimary);
 }

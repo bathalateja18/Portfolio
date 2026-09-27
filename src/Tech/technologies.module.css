@@ -1,49 +1,186 @@
+
+/* this is for dark theme */
 .main {
     width: 100%; /* Use 100% instead of 100vw to prevent horizontal scrollbars */
     min-height: 100vh;
     box-sizing: border-box;
-    border: 2px solid turquoise;
+    /* border: 2px solid turquoise; */
     display: grid;
 
     /* 5 columns defined in areas */
     grid-template-areas: 
         "space-l tech      tech     tech      space-r"
         "space-l front_end back_end data_base space-r"
-        "space-l tools     test     message   space-r";
-
+        "space-l test  tools   message   space-r"
+        "space-l space1  space2   space3   space-r"
+        ;
     /* 5 matching column tracks: left margin, 3 equal content columns, right margin */
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
-    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-template-rows: 0.5fr 2fr 2fr 0.2fr;
     gap: 20px;
+    background-color: var(--bg-primary);
+   
    
 }
 
+
 .technologies {
     grid-area: tech;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.technologies h1
+{
+    color:var(--text-heading);
+}
 
 .frontEnd {
     grid-area: front_end;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-areas: 
+    "space title title "
+    "space space1 space2 "
+    "space html css "
+    "space js react " 
+    "space space-l space-r" 
+    ;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr ;
+   
+    background-color: var( --bg-cardPrimary);
+    border-radius: 10px;    
 }  
-
+.title
+{
+    grid-area: title;
+    align-self: center;
+    display: flex;
+    justify-content:center;
+    align-items: start;
+     /* border: 2px solid teal; */
+}
+.title h1{
+    color:var(--text-heading) ;
+  font-family: sans-serif;
+  font-weight: 600; 
+  size: 20px;
+  padding-bottom: 1rem;
+ border-bottom: 2px solid goldenrod;
+}
+#html
+{
+    grid-area: html;
+}
+#css
+{
+    grid-area: css ;
+}
+#js
+{
+    grid-area: js;
+}
+#react
+{
+    grid-area:react ;
+    
+}
 .backEnd {
     grid-area: back_end;
-    border: 2px solid blue;
+    display: grid;
+    grid-template-areas: 
+    "space  title title "
+    "space java spring"
+    "space space-r space-l "
+    ;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr ;
+    /* box-shadow: 0px 0px 5px 2px  rgb(250,250,250); */
+    background-color:var( --bg-cardPrimary);
+    border-radius: 10px;
+    row-gap: 2rem;
+}
+#java
+{
+    grid-area: java;
+}
+#spring
+{
+    grid-area: spring ;
 }
 
 .database {
     grid-area: data_base;
-    border: 2px solid blue; 
+    /* border: 2px solid blue;  */
+    background-color:var( --bg-cardPrimary);
+    display: grid;
+    grid-template-areas: 
+     "space  title title "
+    "space space1 space2 "
+    "space mysql space-l "
+    "space space-r space-l ";
+     grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 2fr ;
+    border-radius: 10px;
 } 
+#mysql
+{
+    grid-area:mysql ;
+}
 
 .tools {
     grid-area: tools;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    background-color:var( --bg-cardPrimary);
+    display: grid;
+    grid-template-areas:  
+     "space  title title "
+     "space  space1 space2 "
+    "space github git"
+    "space space-r space-l ";
+     grid-template-columns: 0.3fr 1fr 1fr;
+    grid-template-rows: 1fr 0.3fr 2fr 2fr ;
+    border-radius: 10px;
+
+}
+#git
+{
+    grid-area: git;
+}
+#github
+{
+    grid-area:github ;
+}
+
+.hexagon_container {
+  width: 100px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Optional gradient background / shadow styling */
+  background: linear-gradient(135deg,var( --bg-hexGonBg1),var( --bg-hexGonBg2));
+  /* Hexagonal clipping path */
+  clip-path: polygon(
+    50% 0%, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0% 75%, 
+    0% 25%
+  );
+  transition: transform 0.3s ease;
+}
+
+.hexagon_container:hover {
+  transform: scale(1.05);
+}
+
+.hexagon img {
+  width: 45px;
+  height: 45px;
 }
 
 
@@ -52,22 +189,43 @@
         .main
         {
             width: 100%; /* Use 100% instead of 100vw to prevent horizontal scrollbars */
-            min-height: 100vh;
-            box-sizing: border-box;
-            border: 2px solid turquoise;
+            height: 100%;
+            /* box-sizing: content-box; */
+            /* border: 2px solid turquoise; */
             display: grid;
-        
             /* 5 columns defined in areas */
             grid-template-areas: 
-                "space-l tech      space-r"
-                "space-l front_end space-r"
-                "space-l back_end  space-r"
-                "space-l data_base space-r"
-                "space-l tools     space-r";
+                "space-l tech  tech tech    space-r"
+                "space-l space1 front_end space2 space-r"
+                "space-l space1 back_end  space2 space-r"
+                "space-l space1 data_base space2 space-r"
+                "space-l space1 tools     space2 space-r"
+                "space-l space1 space    space2 space-r";
         
             /* 5 matching column tracks: left margin, 3 equal content columns, right margin */
-            grid-template-columns: 0.5fr 1fr  0.5fr; 
-            grid-template-rows: 0.5fr 3fr 3fr 3fr 3fr;
+            grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr; 
+            grid-template-rows: 0.2fr 1fr 0.3fr 0.3fr 0.3fr 0.1fr;
+        }
+        .technologies
+        {
+            grid-area:tech ;
+           
+        }
+        .frontEnd
+        {
+            grid-area: front_end ;
+        }
+        .backEnd
+        {
+            grid-area:back_end ;
+        }
+        .database
+        {
+            grid-area: data_base ;
+        }
+        .tools
+        {
+            grid-area: tools;
         }
         
     }

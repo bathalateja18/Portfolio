@@ -9,10 +9,10 @@ const { theme, toggleTheme } = useTheme();
   
   return (
     <>
-    <section id={darkMode?Style.header:Style.headerDark} >
-      <h1 id={darkMode?Style.name:Style.nameDark}>Hello,<span > i'm Bathala Teja</span></h1>
-      <p id={darkMode?Style.role:Style.roleDark}>Software Engineer | <span>Coding Enthusiast</span> </p>
-      <div id={darkMode?Style.buttons:Style.buttonsDark}>
+    <section id={Style.header} >
+      <h1 id={Style.name}>Hello,<span > i'm Bathala Teja</span></h1>
+      <p id={Style.role}>Software Engineer | <span>Coding Enthusiast</span> </p>
+      <div id={Style.buttons}>
         <button>View projects</button>
         <button>Contact me</button>
       </div>
