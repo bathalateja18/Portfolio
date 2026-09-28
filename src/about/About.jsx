@@ -35,15 +35,7 @@ const About = () => {
         </aside>
       <footer className={ style.aboutFooter}>
         
-         {/* <Row gutter={[16, 16]}>
-      <Col xs={24} sm={12} md={8}>
         
-    <button onClick={updateLoginVisibility}>My self introduction</button>
-    {loginVisible?<Portal click={{loginVisible,updateLoginVisibility}}/>:<></>}
-    
-      </Col>
-      
-    </Row> */}
       </footer>
     </section>
     </> 

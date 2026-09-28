@@ -1,29 +1,231 @@
 .Projects
 {
     width: 100vw;
-    height: 85vh;
-    border: 2px solid red;
+    height: 100%;
+   background-color: var(--bg-primary);
     display: grid;
     grid-template-areas: 
     "space-l title space-r"
     "space-l project1 space-r"
-    "space-l project2 space-r";
-    row-gap: 1rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1fr 1fr;
+    "space-l project2 space-r"
+    "space-l space space-r";
+    row-gap: 2rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.9fr 3fr 3fr 0.1fr;
+    /* border: 2px solid yellow; */
 }
+
 .title
 {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area:title ;
+    color: var(--text-heading);
 }
 .project1
 {
-      border: 2px solid blue;
-    grid-area:project1 ;
+      /* border: 2px solid blue; */
+      grid-area:project1 ;
+      display: grid;
+      grid-template-areas:  
+      "space-l image info space-r";
+      grid-template-columns: 0.1fr 1.5fr 2fr 0.1fr;
+      grid-template-rows: 1fr;
+      background-color: var(--bg-cardPrimary);
+      height: 100%;
+      border-radius: 10px;
+
 }
 .project2
 {
-      border: 2px solid blue;
-    grid-area:project2 ;
+      /* border: 2px solid blue; */
+      grid-area:project2 ;
+      display: grid;
+      grid-template-areas:  
+      "image info";
+      grid-template-columns: 1.5fr 2fr;
+      grid-template-rows: 1fr;
+      background-color: var(--bg-cardPrimary);
+           border-radius: 10px;
+
+}
+.peojectimage
+{
+    grid-area:image ;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+.peojectimage img{
+    width: 98%;
+    height: 95%;
+    border-radius: 20px;
+}
+.peojectinfo
+{
+    grid-area:info ;
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-areas: 
+    "space-l space1 space-r"
+    "space-l nav space-r"
+    "space-l title space-r"
+    "space-l description space-r"
+    "space-l technology space-r"
+    "space-l features space-r"
+    "space-l links space-r"
+    "space-l space2 space-r"
+    ;
+    grid-template-columns: 0.06fr 2fr 0.06fr;
+    grid-template-rows:0.05fr 0.15fr 0.4fr 0.4fr  1fr 0.1fr 0.8fr 0.01fr;
+}
+.navBar
+{
+    grid-area: nav ;
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-areas: 
+     "space-l space1  space2 space3 space-r"
+    "space-l featured  space development space-r"
+    "space-l spaceA  spaceB spaceC space-r";
+    grid-template-columns: 0.2fr 1fr 1.5fr 1.4fr 0.2fr;
+    grid-template-rows: 0.3fr 0.5fr 0.2fr;
+}
+.feature
+{
+    grid-area: featured;
+    background-color:var(--featured-bg-color);
+    color: var( --featured-text-color);
+
+    border: 2px solid red;
+    border-radius: 10px;
+   
+    padding: 5px;
+}
+.Development
+{
+    grid-area: development;
+     background-color:var(--highlight-color);
+    color: blueviolet;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+     padding: 4px;
+}
+.projectTitle
+{
+    grid-area: title ;
+     /* border: 2px solid white; */
+    color: var( --text-primary);
+}
+.projectTitle h2{
+     color: var( --text-primary);
+}
+.projectDescription
+{
+    grid-area:description  ;
+     /* border: 2px solid white; */
+     color: var(--project-text-color);
+     
+}
+.projectTechnologies
+{
+    grid-area: technology ;
+     /* border: 2px solid rebeccapurple; */
+    display: grid;
+    grid-template-areas:
+    "space-l  space2  space3  space4  space5  space-r"
+    "space-l  react   java    spring  gemini  space-r"
+    "space-l  A        B        C       D  space-r"
+    "space-l  sql     space  space  space  space-r"
+    ;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.4fr 0.8fr 0.3fr 0.8fr  ;
+   
+  /* background: linear-gradient(135deg,var( --bg-hexGonBg1),var( --bg-hexGonBg2)); */
+  
+}
+.React
+{
+    grid-area:react ;
+}
+.java
+{
+     grid-area:java ;
+}
+.spring
+{
+ grid-area:spring ;
+}
+.gemeni{
+ grid-area:gemini
+}
+.sql
+{
+grid-area:sql ; 
+}
+.projectTechnologies img{
+    width: 25px;
+    height: 25px;
+}
+
+.projectFeatures {
+    grid-area: features;
+    display: grid;
+    grid-template-areas: 
+        " chat     response "
+        " image    student  ";
+    
+    
+    grid-template-columns:   0.6fr  0.6fr;
+    grid-template-rows: auto auto; 
+    gap: 0.2rem; /* Adds spacing between items */
+    align-items: center;
+    color: dodgerblue;
+     /* border: 2px solid white; */
+}
+
+/* Ensure child items allow text to wrap or shrink */
+.projectFeatures > div {
+    text-align: center;
+}
+
+.AI_Chat {
+    grid-area: chat;
+}
+.Image_Support {
+    grid-area: image;
+}
+.Responsive_Ui {
+    grid-area: response;
+}
+.Student_Focused {
+    grid-area: student;
+}
+.projectLinks
+{
+     grid-area:links  ;
+     /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.github button
+{
+    border-radius: 20px;
+    border-color: black;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+}
+.deploymentlink button{
+    border-radius: 20px;
+    border-color: lightskyblue;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+
 }

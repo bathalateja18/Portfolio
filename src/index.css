@@ -12,15 +12,18 @@
    --button-bg: rgb(0, 128, 128);
    --headerName:teal;
    --headerNameSpan:gold;
-}
-
-/* Override variables when dark mode is active */
-/* this is for the light mode  */
-[data-theme='dark'] {
+   --featured-bg-color:dodgerblue;
+    --featured-text-color:white;
+    --project-text-color:gainsboro;
+  }
+  
+  /* Override variables when dark mode is active */
+  /* this is for the light mode  */
+  [data-theme='dark'] {
     --bg-hexGonBg1: whitesmoke;
     --bg-hexGonBg2: whitesmoke;
     --bg-headerPrimary:rgb(210,219,229);
-  --bg-primary:whitesmoke;
+    --bg-primary:whitesmoke;
   --bg-cardPrimary: #ffffff;
   --text-primary: #000000;
   --text-heading: rgb(30, 144, 255);
@@ -28,4 +31,7 @@
   --button-bg: rgb(0, 128, 128);
   --headerName:dodgerblue;
   --headerNameSpan:dodgerblue;
+  --featured-bg-color:lightblue;
+  --featured-text-color:dodgerblue;
+  --project-text-color:black;
 }
