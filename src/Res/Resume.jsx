@@ -5,9 +5,14 @@ let Resume = () => {
     return(
         <>  
         <div id='Resume'   class={style.Resume}>
-            <div class={style.title}>title</div>
-            <div class={style.view}>view resume </div>
-            <div class={style.download}>download resume </div>
+            <div class={style.title}>
+                <h1>Resume</h1>
+            </div>
+            <div class={style.view}>
+                <button>view resume</button> </div>
+            <div class={style.download}>
+                <button>download resume</button>
+             </div>
         </div>
         </>
     )

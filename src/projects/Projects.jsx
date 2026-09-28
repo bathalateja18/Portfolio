@@ -17,7 +17,8 @@ let Projects =()=>
         </div>
         <div class={style.project1}>
           <aside class={style.peojectimage}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlWR2YNqHyIHL9mDqDVVgCzmaLoJYcqNXfAR9iIlZ5Q&s=10" alt="Student Ai chatBot" />
+            <img src="https://cdn0.weddingwire.in/vendor/5990/3_2/960/jpg/catering-kalyan-catering-services-catering-setup-8_15_375990-162635242590605.jpeg" alt="Catering Service" />
+        
           </aside>
           <main class={style.peojectinfo}>
             <div class={style.navBar}>
@@ -72,7 +73,7 @@ let Projects =()=>
 
         <div class={style.project2}>
           <aside class={style.peojectimage}>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlWR2YNqHyIHL9mDqDVVgCzmaLoJYcqNXfAR9iIlZ5Q&s=10" alt="Student Ai chatBot" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlWR2YNqHyIHL9mDqDVVgCzmaLoJYcqNXfAR9iIlZ5Q&s=10" alt="Student Ai chatBot" /> 
           </aside>
           <main class={style.peojectinfo}>
             <div class={style.navBar}>

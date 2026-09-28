@@ -99,7 +99,7 @@
     background-color:var(--featured-bg-color);
     color: var( --featured-text-color);
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
     border-radius: 10px;
    
     padding: 5px;
@@ -228,4 +228,125 @@ grid-area:sql ;
     font-size: 15px;
     padding: 8px;
 
+}
+
+@media screen and (max-width:756px){
+    .Projects
+{
+    width: 100vw;
+    height: 100%;
+   background-color: var(--bg-primary);
+    display: grid;
+    grid-template-areas: 
+    "space-l title space-r"
+    "space-l project1 space-r"
+    "space-l project2 space-r"
+    "space-l space space-r";
+    row-gap: 2rem;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 0.9fr 2fr 2fr 0.1fr;
+    /* border: 2px solid yellow; */
+} .peojectinfo
+{
+    grid-area:info ;
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-areas: 
+    "space-l space1 space-r"
+    "space-l nav space-r"
+    "space-l title space-r"
+    "space-l description space-r"
+    "space-l technology space-r"
+    "space-l features space-r"
+    "space-l links space-r"
+    "space-l space2 space-r"
+    ;
+    grid-template-columns: 0.06fr 2fr 0.06fr;
+    grid-template-rows:0.05fr 0.15fr 0.3fr 0.3fr  0.7fr 0.1fr 0.8fr 0.01fr;
+    /* border: 2px solid white; */
+}
+.projectTechnologies
+{
+    grid-area: technology ;
+     /* border: 2px solid rebeccapurple; */
+    display: grid;
+    grid-template-areas:
+    "space-l  space2  space3  space4  space5  space-r"
+    "space-l  react   java    spring  gemini  space-r"
+    "space-l  A        B        C       D  space-r"
+    "space-l  sql     space  space  space  space-r"
+    ;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-rows: 0.2fr 0.5fr 0.03fr 0.1fr  ;
+   
+  /* background: linear-gradient(135deg,var( --bg-hexGonBg1),var( --bg-hexGonBg2)); */
+  
+}
+.projectLinks
+{
+     grid-area:links  ;
+     /* border: 2px solid white; */
+    display: grid;
+    grid-template-areas:
+    "github"
+    "deployment";
+    align-items: center;
+    justify-content: space-evenly;
+}
+.github button
+{
+    border-radius: 20px;
+    border-color: black;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    /* padding: 8px; */
+}
+.deploymentlink button{
+    border-radius: 20px;
+    border-color: lightskyblue;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 15px;
+    padding: 8px;
+
+}
+.navBar
+{
+    grid-area: nav ;
+    /* border: 2px solid white; */
+    display: grid;
+    grid-template-areas: 
+     "space-l space1  space2 space3 space-r"
+    "space-l featured  space development space-r"
+    "space-l spaceA  spaceB spaceC space-r";
+    grid-template-columns: 0.1fr 0fr 0fr 2fr 0.1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.2fr;
+}
+.feature
+{
+    grid-area: featured;
+    background-color:var(--featured-bg-color);
+    color: var( --featured-text-color);
+
+    /* border: 2px solid red; */
+    font-size: 12px;
+    border-radius: 10px;
+    display: none;
+   
+    /* padding: 5px; */
+}
+.Development
+{
+    grid-area: development;
+     background-color:var(--highlight-color);
+    color: blueviolet;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+     padding: 4px;
+}
+
+
+  
+    
 }
