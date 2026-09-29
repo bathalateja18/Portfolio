@@ -1,0 +1,29 @@
+.contactInfo
+{
+    border: 2px solid mediumspringgreen;
+    width: 100vw;
+    height: 70vh;
+    display: grid;
+    grid-template-areas: 
+    "space-l title space-r"
+    "space-l details space-r"
+    "space-l form space-r";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 2fr;
+    row-gap: 1rem;
+}
+.title
+{
+    border: 2px solid blue;
+    grid-area: title;
+}
+.contactDetails
+{
+     border: 2px solid blue;
+    grid-area: details;
+}
+.contactForm
+{
+     border: 2px solid blue;
+    grid-area: form;
+}

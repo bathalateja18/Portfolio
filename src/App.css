@@ -1,0 +1,81 @@
+#main
+{
+    width: 98vw;
+    max-height: 100%;
+    display:grid;
+    grid-template-areas: 
+             "nav"
+             "header"
+             "about"
+             "technologies"
+             "professional"
+             "projects"
+             "resume"
+             "contact"
+             "footer";
+
+             grid-template-columns: 1fr;
+    
+}
+#NavBar
+{
+    grid-area: nav;
+}
+#Hearder
+{
+    grid-area:header ;
+}
+#About
+{
+    grid-area: about;
+}
+#Technologies
+{
+    grid-area: technologies;
+}
+#prefossionExperience
+{
+    grid-area: professional;
+}
+#Projects
+{
+    grid-area: projects;
+}
+#Resume
+{
+    grid-area: resume;
+}
+#Contact
+{
+    grid-area: contact;
+}
+#Footer
+{
+    grid-area: footer;
+}
+
+@media screen  and (max-width:768px){
+    #main
+{
+    width: 100vw;
+    max-height: 100%;
+    display:grid;
+    grid-template-areas: 
+             "nav"
+             "header"
+             "about"
+             "technologies"
+             "professional"
+             "projects"
+             "resume"
+             "contact"
+             "footer";
+
+             grid-template-columns: 1fr;
+
+
+    
+}
+
+    
+}

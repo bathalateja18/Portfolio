@@ -1,0 +1,37 @@
+/* this for the dark mode */
+:root {
+  /* Default Light Mode Colors */
+  --bg-primary: rgb(26,26,46);
+  --bg-headerPrimary:rgb(42,55,74);
+   --bg-cardPrimary:rgb(22,33,62);
+   --bg-hexGonBg1: #1e293b;
+   --bg-hexGonBg2: #0f172a;
+   --text-primary: #ffffff;
+   --text-heading: aqua;
+   --highlight-color: rgb(255, 215, 0);
+   --button-bg: rgb(0, 128, 128);
+   --headerName:teal;
+   --headerNameSpan:gold;
+   --featured-bg-color:dodgerblue;
+    --featured-text-color:white;
+    --project-text-color:gainsboro;
+  }
+  
+  /* Override variables when dark mode is active */
+  /* this is for the light mode  */
+  [data-theme='dark'] {
+    --bg-hexGonBg1: whitesmoke;
+    --bg-hexGonBg2: whitesmoke;
+    --bg-headerPrimary:rgb(210,219,229);
+    --bg-primary:whitesmoke;
+  --bg-cardPrimary: #ffffff;
+  --text-primary: #000000;
+  --text-heading: rgb(30, 144, 255);
+  --highlight-color: rgb(218, 165, 32);
+  --button-bg: rgb(0, 128, 128);
+  --headerName:dodgerblue;
+  --headerNameSpan:dodgerblue;
+  --featured-bg-color:lightblue;
+  --featured-text-color:dodgerblue;
+  --project-text-color:black;
+}

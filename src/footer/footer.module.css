@@ -1,0 +1,23 @@
+#footer
+{
+    width: 100vw;
+    height: 20vh;
+    border: 2px solid cyan;
+    display: grid;
+    grid-template-areas: 
+    "space-l info space-1"
+    "space-l links space-1";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 1rem;
+}
+#info
+{
+    border: 2px solid blue;
+    grid-area:info ;
+}
+#links
+{
+    border: 2px solid blue;
+    grid-area:links ;
+}
