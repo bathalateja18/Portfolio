@@ -1,6 +1,6 @@
 import reaact from 'react'
 import style from '../Res/resume.module.css'
-import MyResumePDF from '/Users/batha/Desktop/Portfolio/public/Teja_Bathala_Software_Engineer.pdf'
+import MyResumePDF from '/Teja_Bathala_Software_Engineer.pdf'
 
 let Resume = () => {
   const fileName = "Teja_Bathala_Resume.pdf";
