@@ -26,19 +26,6 @@ const App = () => {
   },[0]) 
  
   return (
-  //   <Fragment >
-  //       <div id='main'>
-  //             <NavBar id='NavBar' />
-  //             <Hearder id='Hearder' /> 
-  //             <About id='About'/>
-  //             <Technologies id='Technologies' />
-  //             <PrefessionalExperience id='prefossionExperience'/>
-  //             <Projects id='Projects'/>
-  //             <Resume  id='Resume'/>
-  //             <Contact id='Contact' />
-  //             <Footer  id='Footer' />
-  //        </div>
-  // </Fragment>
   <Fragment>
     <div id='main'>
       <div id='NavBar'><NavBar /></div>

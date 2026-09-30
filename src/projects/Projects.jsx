@@ -2,7 +2,9 @@ import react from 'react'
 import style from '../projects/projects.module.css'
 import {StarFilled,WechatWorkOutlined,
   FileImageOutlined,BorderOuterOutlined,
-  UserOutlined,GithubFilled,ArrowRightOutlined} from '@ant-design/icons'
+  UserOutlined,GithubFilled,
+  ArrowRightOutlined,EnvironmentOutlined
+,DollarOutlined} from '@ant-design/icons'
 
 
 let Projects =()=>
@@ -43,19 +45,19 @@ let Projects =()=>
             <div class={style.projectFeatures}>
                 <div>
                   
-                  <span> <WechatWorkOutlined class={style.AI_Chat}/> &nbsp; AI Chat</span>
+                  <span> <WechatWorkOutlined class={style.AI_Chat}/> &nbsp; Event Booking</span>
                 </div>
                 <div>
                  
-                  <span> <FileImageOutlined class={style.Image_Support}/>  &nbsp; Image Support</span>
+                  <span> <DollarOutlined  class={style.Image_Support}/>  &nbsp; Price Comparison</span>
                 </div>
                 <div>
                   
-                  <span><BorderOuterOutlined class={style.Responsive_Ui}/> &nbsp; Responsive Ui</span>
+                  <span><EnvironmentOutlined class={style.Responsive_Ui}/> &nbsp; Location Based</span>
                 </div>
                 <div>
                  
-                  <span> <UserOutlined class={style.Student_Focused}/> &nbsp; Student Focused</span>
+                  <span> <UserOutlined class={style.Student_Focused}/> &nbsp; Service Provider</span>
 
                 </div>
             </div>

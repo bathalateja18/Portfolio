@@ -1,29 +1,151 @@
-.contactInfo
-{
-    border: 2px solid mediumspringgreen;
-    width: 100vw;
-    height: 70vh;
-    display: grid;
-    grid-template-areas: 
-    "space-l title space-r"
-    "space-l details space-r"
-    "space-l form space-r";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 2fr;
-    row-gap: 1rem;
+/* Container for centering the entire section on a dark background */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var( --text-primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+  width: 99%;
 }
-.title
-{
-    border: 2px solid blue;
-    grid-area: title;
+
+.titleText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var( --text-heading);
+  margin-bottom: 20px;
+  text-align: center;
 }
-.contactDetails
-{
-     border: 2px solid blue;
-    grid-area: details;
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.contactForm
-{
-     border: 2px solid blue;
-    grid-area: form;
+
+.infoItem {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.highlightText {
+
+  color:var( --contact-info-color);
+  
+}
+
+/* Form container card */
+.formCard {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  width: 100%;
+  max-width: 520px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid Layout using grid-template-areas */
+.formGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "email"
+    "message"
+    "button";
+}
+
+.nameArea {
+  grid-area: name;
+}
+
+.emailArea {
+  grid-area: email;
+}
+
+.messageArea {
+  grid-area: message;
+}
+
+.buttonArea {
+  grid-area: button;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* Shared input styling */
+.inputField {
+  width: 100%;
+  background-color: #e8f0fe;
+  border: 2px solid #38bdf8;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 1rem;
+  color: #4b5563;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputField::placeholder {
+  color: #6b7280;
+}
+
+.inputField:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.3);
+}
+
+.textareaField {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Button styling matching the image */
+.submitButton {
+  background-color:var(--button-bg);
+  border: 1.5px solid #1e293b;
+  border-radius: 8px;
+  color: white;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #facc15;
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.success {
+  color: #16a34a;
+  margin: 0;
+}
+
+.error {
+  color: #dc2626;
+  margin: 0;
 }

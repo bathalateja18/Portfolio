@@ -1,6 +1,6 @@
 .Projects
 {
-    width: 100vw;
+    width: 99vw;
     height: 100%;
    background-color: var(--bg-primary);
     display: grid;
@@ -233,7 +233,7 @@ grid-area:sql ;
 @media screen and (max-width:756px){
     .Projects
 {
-    width: 100vw;
+    width: 100%;
     height: 100%;
    background-color: var(--bg-primary);
     display: grid;
