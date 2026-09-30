@@ -31,6 +31,9 @@
     align-items: center;
     justify-content: center;
 }
+#icons{
+    font-size: 30px;
+}
 #logo
 {
     background-color: darkturquoise;

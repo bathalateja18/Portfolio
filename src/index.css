@@ -15,6 +15,8 @@
    --featured-bg-color:dodgerblue;
     --featured-text-color:white;
     --project-text-color:gainsboro;
+    --contact-info-color:khaki;
+   
   }
   
   /* Override variables when dark mode is active */
@@ -34,4 +36,5 @@
   --featured-bg-color:lightblue;
   --featured-text-color:dodgerblue;
   --project-text-color:black;
+   --contact-info-color:dodgerblue;
 }
