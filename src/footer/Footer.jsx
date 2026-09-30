@@ -18,7 +18,7 @@ const ScalerIcon = () => (
 
 const socialLinks = [
   { name:'GitHub',  icon: <GithubOutlined />, url: 'https://github.com/bathalateja18' },
-  { name:'LeetCode', icon: <LeetCodeIcon />, url: 'https://leetcode.com/u/Bathala-teja8352/' },
+  // { name:'LeetCode', icon: <LeetCodeIcon />, url: 'https://leetcode.com/u/Bathala-teja8352/' },
   { name:'LinkedIn', icon: <LinkedinFilled />, url: 'https://www.linkedin.com/in/bathala-teja-017b21240/' },
   { name:'Scaler', icon: <ScalerIcon />, url: 'https://www.scaler.com/academy/profile/35bb1be9a39d/' },
 ];
